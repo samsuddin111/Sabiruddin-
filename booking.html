@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking | Sabiruddin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111;
+}
+
+nav h2{
+color:gold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:gold;
+}
+
+/* Section */
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section h1{
+color:gold;
+margin-bottom:10px;
+}
+
+.section p{
+margin-bottom:30px;
+color:#ccc;
+}
+
+/* Form Box */
+.form-box{
+max-width:500px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,215,0,0.2);
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#000;
+border:1px solid gold;
+color:white;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:linear-gradient(45deg,gold,#ffcc00);
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 15px gold;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.note{
+margin-top:20px;
+font-size:14px;
+color:gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Sabiruddin</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="gojol.html">Gojol</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="#">Gallery</a></li>
+</ul>
+</nav>
+
+<section class="section">
+<h1>🎟 Book Live Program</h1>
+<p>Please fill the form below to book your Islamic event.</p>
+
+<div class="form-box">
+
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+<input type="date" id="date" required>
+<input type="text" id="location" placeholder="Program Location" required>
+<textarea id="message" rows="4" placeholder="Event Details"></textarea>
+
+<button onclick="sendWhatsApp()">Submit Booking</button>
+
+<div class="note">
+⚠ Booking Confirm Only After ₹1500 Advance Payment
+</div>
+
+</div>
+
+</section>
+
+<script>
+function sendWhatsApp(){
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var date = document.getElementById("date").value;
+var location = document.getElementById("location").value;
+var message = document.getElementById("message").value;
+
+var text = "Booking Request:%0A%0A"
++ "Name: " + name + "%0A"
++ "Phone: " + phone + "%0A"
++ "Date: " + date + "%0A"
++ "Location: " + location + "%0A"
++ "Details: " + message;
+
+window.open("https://wa.me/9353544837?text=" + text, "_blank");
+}
+</script>
+
+</body>
+</html>
