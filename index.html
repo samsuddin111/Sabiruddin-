@@ -18,6 +18,52 @@ body{
 background:#000;
 color:#fff;
 }
+  /* Mobile Menu */
+.menu-toggle{
+display:none;
+font-size:28px;
+color:gold;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+nav{
+flex-direction:column;
+align-items:flex-start;
+}
+
+nav div{
+display:none;
+flex-direction:column;
+width:100%;
+}
+
+nav div a{
+margin:10px 0;
+}
+
+nav.active div{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+position:absolute;
+right:20px;
+top:20px;
+}
+}
+
+/* Hero Button Upgrade */
+.hero button{
+background:linear-gradient(45deg,gold,#ffcc00);
+border-radius:30px;
+box-shadow:0 0 20px gold;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
 
 /* Navbar */
 nav{
@@ -85,7 +131,17 @@ transition:0.3s;
 background:white;
 color:black;
 }
-
+<nav>
+<h2>Sabiruddin</h2>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div id="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Gojol</a>
+<a href="#">Booking</a>
+<a href="#">Gallery</a>
+</div>
+</nav>
 /* Section */
 .section{
 padding:60px 20px;
