@@ -1,70 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sabiruddin - Islamic Gojol Artist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabiruddin | Islamic Gojol Artist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-    margin:0;
-    font-family: Arial;
-    background:#0b3d0b;
-    color:white;
-    text-align:center;
+background:#000;
+color:#fff;
 }
-header{
-    padding:40px 20px;
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
 }
-h1{
-    font-size:28px;
+
+nav h2{
+color:gold;
 }
-section{
-    padding:30px 20px;
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+transition:0.3s;
 }
-button{
-    padding:12px 25px;
-    background:gold;
-    border:none;
-    font-size:16px;
-    cursor:pointer;
+
+nav a:hover{
+color:gold;
 }
-.box{
-    background:#145214;
-    margin:20px;
-    padding:20px;
-    border-radius:10px;
+
+/* Hero Section */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=1400');
+background-size:cover;
+background-position:center;
+animation:fadeIn 2s ease-in;
 }
+
+.hero h1{
+font-size:40px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:25px;
+}
+
+.hero button{
+padding:12px 30px;
+background:gold;
+border:none;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:white;
+color:black;
+}
+
+/* Section */
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section h2{
+color:gold;
+margin-bottom:20px;
+}
+
+/* Testimonials */
+.testimonial{
+background:#111;
+margin:20px;
+padding:20px;
+border-left:4px solid gold;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:gold;
+color:black;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Animation */
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
 </style>
 </head>
+
 <body>
 
-<header>
+<nav>
+<h2>Sabiruddin</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Gojol</a>
+<a href="#">Booking</a>
+<a href="#">Gallery</a>
+</div>
+</nav>
+
+<section class="hero">
 <h1>🌙 Sabiruddin</h1>
-<p>Professional Islamic Gojol Artist</p>
-<button onclick="document.getElementById('booking').scrollIntoView();">
-Book Now
-</button>
-</header>
-
-<section class="box">
-<h2>About Artist</h2>
-<p>Sabiruddin is a professional Islamic Gojol artist available for Mehfil, Milad, Jalsa & Islamic Programs.</p>
+<p>Professional Islamic Gojol Artist spreading peace and spirituality through soulful recitation.</p>
+<button onclick="alert('Booking Page Coming Soon')">Book Live Program</button>
 </section>
 
-<section class="box">
-<h2>Latest Gojol</h2>
-<iframe width="100%" height="200"
-src="https://www.youtube.com/embed/YEJvbRaQ4LI""
-frameborder="0" allowfullscreen>
-</iframe>
+<section class="section">
+<h2>Upcoming Events</h2>
+<p>20 Feb - Kolkata (Booked)</p>
+<p>25 Feb - Assam (Available)</p>
 </section>
 
-<section id="booking" class="box">
-<h2>Booking Information</h2>
-<p>Advance Payment Required: ₹1500</p>
-<p>Contact: 9353544837</p>
-<button onclick="alert('Booking System Coming Soon');">
-Confirm Booking
-</button>
+<section class="section">
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐ <br>
+"Outstanding performance! Audience was emotional." <br>
+– Maulana Rashid, Kolkata
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐ <br>
+"Very spiritual and powerful voice." <br>
+– Abdul Karim, Assam
+</div>
+
 </section>
+
+<a class="whatsapp" href="https://wa.me/9353544837" target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
