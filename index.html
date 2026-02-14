@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Islamic Gojol Artist</title>
+<title>Sabiruddin - Islamic Gojol Artist</title>
 <style>
-body { text-align:center; font-family:Arial; background:#0b3d0b; color:white; }
-button { padding:10px 20px; background:gold; border:none; cursor:pointer; }
+body{
+    margin:0;
+    font-family: Arial;
+    background:#0b3d0b;
+    color:white;
+    text-align:center;
+}
+header{
+    padding:40px 20px;
+}
+h1{
+    font-size:28px;
+}
+section{
+    padding:30px 20px;
+}
+button{
+    padding:12px 25px;
+    background:gold;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+}
+.box{
+    background:#145214;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
 </style>
 </head>
 <body>
-<h1>🌙 Islamic Gojol Artist</h1>
-<p>Welcome to Official Website</p>
-<button onclick="alert('Booking System Coming Soon')">Book Now</button>
+
+<header>
+<h1>🌙 Sabiruddin</h1>
+<p>Professional Islamic Gojol Artist</p>
+<button onclick="document.getElementById('booking').scrollIntoView();">
+Book Now
+</button>
+</header>
+
+<section class="box">
+<h2>About Artist</h2>
+<p>Sabiruddin is a professional Islamic Gojol artist available for Mehfil, Milad, Jalsa & Islamic Programs.</p>
+</section>
+
+<section class="box">
+<h2>Latest Gojol</h2>
+<iframe width="100%" height="200"
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+frameborder="0" allowfullscreen>
+</iframe>
+</section>
+
+<section id="booking" class="box">
+<h2>Booking Information</h2>
+<p>Advance Payment Required: ₹1500</p>
+<p>Contact: 9XXXXXXXXX</p>
+<button onclick="alert('Booking System Coming Soon');">
+Confirm Booking
+</button>
+</section>
+
 </body>
 </html>
