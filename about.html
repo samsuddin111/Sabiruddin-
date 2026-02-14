@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Sabiruddin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111;
+}
+
+nav h2{
+color:gold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:gold;
+}
+
+/* Section */
+.section{
+padding:80px 20px;
+text-align:center;
+animation:fadeIn 1.5s ease-in;
+}
+
+.section h1{
+color:gold;
+margin-bottom:20px;
+}
+
+.section p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+/* Card */
+.card{
+background:#111;
+margin-top:40px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,215,0,0.2);
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Sabiruddin</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Gojol</a></li>
+<li><a href="#">Booking</a></li>
+<li><a href="#">Gallery</a></li>
+</ul>
+</nav>
+
+<section class="section">
+<h1>About Sabiruddin</h1>
+
+<p>
+Sabiruddin is a professional Islamic Gojol artist known for his soulful voice and powerful spiritual performances.  
+He performs in Mehfil, Milad, Jalsa and various Islamic programs across India.  
+His goal is to spread peace, unity and Islamic values through meaningful Gojol recitations.
+</p>
+
+<div class="card">
+<h2 style="color:gold;">Experience</h2>
+<p>✔ 5+ Years Performing Experience</p>
+<p>✔ 100+ Successful Islamic Programs</p>
+<p>✔ Trusted by Islamic Organisations</p>
+</div>
+
+</section>
+
+</body>
+</html>
